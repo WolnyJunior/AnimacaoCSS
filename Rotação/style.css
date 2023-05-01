@@ -1,0 +1,83 @@
+
+.rotate-scale-up {
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+    /* animation-delay: 1s; */
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(360deg);
+        background-color: black;
+        color: white;
+    }
+}
+
+.rotate-vert {
+    animation: rotate-vert 0.65s linear both;
+    /* animation-delay: 2s; */
+}
+
+@keyframes rotate-vert {
+    0% {
+        transform: scale(1) rotateX(0);
+    }
+
+    50% {
+        transform: scale(2) rotateX(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateX(360deg);
+        background: transparent;
+        color: white;
+    }
+}
+
+.rotate-hori {
+    animation: rotate-hori 0.65s linear both;
+    /* animation-delay: 3s; */
+}
+
+@keyframes rotate-hori {
+    0% {
+        transform: scale(1) rotateY(0);
+    }
+
+    50% {
+        transform: scale(0.6) rotateX(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateY(360deg);
+        background-color: white;
+    }
+}
+
+.rotate-diagonal {
+    animation: rotate-diagonal 0.5s linear both;
+    /* animation-delay: 4s; */
+}
+
+@keyframes rotate-diagonal {
+    0% {
+        transform: rotate3d(-1, 1, 0, 0deg);
+
+    }
+
+    50% {
+        transform: rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(-1, 1, 0, 360deg);
+    }
+}

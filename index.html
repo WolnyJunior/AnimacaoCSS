@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Rotação/style.css">
+    <link rel="stylesheet" href="./Flip/style.css">
+    <link rel="stylesheet" href="./Sombra/style.css">
+    <link rel="stylesheet" href="./Text/style.css">
+    <link rel="stylesheet" href="./Attention/style.css">
+</head>
+
+<body>
+    <div class="container-data">
+        <p class="data" id="dia"></p>
+        <p class="data" id="mes"></p>
+        <p class="data" id="ano"></p>
+    </div>
+
+    <div class="grid-container">
+        <div class="square square-box rotate-scale-up">Rotação Central +Zoom</div>
+        <div class="square square-box rotate-vert">Rotação Vertical Central +Zoom</div>
+        <div class="square square-box rotate-hori">Rotação Horizontal Central -Zoom</div>
+        <div class="square square-box rotate-diagonal">Rotação Diagonal</div>
+
+        <div class="square square-box card flip-horizontal-bottom">
+            <div class="card-front">FRONT</div>
+            <div class="card-back">BACK</div>
+        </div>
+        <div class="square square-box card flip2-vert">
+            <div class="card-front">FRONT</div>
+            <div class="card-back">BACK</div>
+        </div>
+        <div class="square square-box card flip-vert-left">
+            <div class="card-front">FRONT</div>
+            <div class="card-back">BACK</div>
+        </div>
+        <div class="square square-box card flip-scale-down-vert">
+            <div class="card-front">FRONT</div>
+            <div class="card-back">BACK</div>
+        </div>
+        <div class="square square-box shadow-pop-tr">Sombra Deslocando o Objeto</div>
+        <div class="square square-box shadow-inset-center">Sombra Interna</div>
+        <div class="square square-box shadow-drop-top">Sombra Top</div>
+        <div class="square square-box shadow-drop-2-center">Sombra +Zoom</div>
+
+        <div class="square-text square-box tracking-in-expand">Animação</div>
+        <div class="square-text square-box tracking-in-contract-bck">Animação</div>
+        <div class="square-text square-box focus-in-expand-fwd">Animação</div>
+        <div class="square-text square-box tracking-out-contract-bck-top">Animação</div>
+        <div class="square-text square-box scale-out-vertical">Animação</div>
+        <div class="square-text square-box rotate-out-center">Animação</div>
+
+        
+        <div class="square-text-2 square-box text-shadow-pop-tr">A</div>
+        <div class="square-text-2 square-box text-pop-up-top">A</div>
+        
+        <div class="square-box button-box vibrate-1">Vibração</div>
+        <div class="square-box button-box shake-horizontal">Shake</div>
+        <div class="square-box button-box bounce-top">Bounce</div>
+        <div class="square-box button-box jello-horizontal">Gelatina</div>
+
+        <div class="square-box"></div>
+        <div class="square-box"></div>
+        <div class="square-box"></div>
+        <div class="square-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
